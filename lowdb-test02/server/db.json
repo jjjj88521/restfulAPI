@@ -106,13 +106,30 @@
       "createTime": 1694411724230
     }
   ],
-  "users": {
-    "f9ce7b8b-7cd3-40a0-a73c-be25c7aae17e": {
+  "users": [
+    {
       "id": "f9ce7b8b-7cd3-40a0-a73c-be25c7aae17e",
       "account": "user1",
       "password": "123456",
       "name": "Emma Richards",
+      "mail": "emma.richards@example.com",
       "head": "https://randomuser.me/api/portraits/women/17.jpg"
+    },
+    {
+      "id": "a7623ba1-9198-4839-90db-f5b2875f1f43",
+      "account": "user2",
+      "password": "123456",
+      "name": "Eileen Holland",
+      "mail": "eileen.holland@example.com",
+      "head": "https://randomuser.me/api/portraits/women/95.jpg"
+    },
+    {
+      "id": "1bd30365-e6e9-4823-aa8d-3eb104992def",
+      "account": "user3",
+      "password": "123456",
+      "name": "Hannah Hart",
+      "mail": "hannah.hart@example.com",
+      "head": "https://randomuser.me/api/portraits/women/46.jpg"
     }
-  }
+  ]
 }

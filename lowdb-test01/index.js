@@ -52,16 +52,32 @@ const { v4: uuidv4 } = require("uuid");
 // console.log(products);
 // console.log(users);
 
+// 找出 id 為 06f15555-5710-41f1-8a50-bf5622cf377d 的資料
 // let data = db
 //   .get("products")
 //   .find({ id: "06f15555-5710-41f1-8a50-bf5622cf377d" })
 //   .value();
 
+// 找出所有包含 "瓜" 的資料
 // let data = db
 //   .get("products")
 //   .filter(p => p.title.includes("瓜"))
 //   .value();
 
-let data = db.get("products").slice(0).take(5).value();
+// 分頁
+// let data = db.get("products").slice(0).take(5).value();
+
+// 修改 id 為 06f15555-5710-41f1-8a50-bf5622cf377d 的資料
+// let data = db
+//   .get("products")
+//   .find({ id: "06f15555-5710-41f1-8a50-bf5622cf377d" })
+//   .assign({ stock: 90 })
+//   .write();
+
+// 刪除 id 為 06f15555-5710-41f1-8a50-bf5622cf377d 的資料
+// let data = db
+//   .get("products")
+//   .remove({ id: "06f15555-5710-41f1-8a50-bf5622cf377d" })
+//   .write();
 
 console.log(data);
