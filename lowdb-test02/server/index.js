@@ -265,6 +265,12 @@ function checkToken(req, res, next) {
   if (token) {
     jwt.verify(token, secretKey, (err, decoded) => {
       if (err) {
+        // 檢查是否已過期
+        if (err.name === "TokenExpiredError") {
+          return res
+            .status(401)
+            .json({ status: "error", message: "token 已過期，請重新登入" })
+        }
         return res
           .status(401)
           .json({ status: "error", message: "驗證失敗，請重新登入" })

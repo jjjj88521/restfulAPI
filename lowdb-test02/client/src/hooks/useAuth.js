@@ -20,9 +20,9 @@ const useAuth = () => {
       console.log(error.response)
     }
   }
-  const logout = () => {
+  const logout = async () => {
     try {
-      axios.post(
+      await axios.post(
         API_LOGOUT,
         {},
         {
