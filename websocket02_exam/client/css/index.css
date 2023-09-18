@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+
+.down {
+  height: 60px;
+}
+
+.up {
+  height: calc(100% - 60px);
+}
+
+.right {
+  width: 170px;
+}
+
+.left {
+  width: calc(100% - 170px);
+}

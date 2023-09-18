@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%;
+}
+
+.left {
+  width: 250px;
+}
+
+.right {
+  width: calc(100% - 250px);
+}
